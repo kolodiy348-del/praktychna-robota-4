@@ -35,3 +35,13 @@
 
 Висновок: вебзастосунок демонструє високі показники
 продуктивності, доступності та пошукової оптимізації.
+## Responsive Design Testing
+
+The website was tested using Chrome DevTools.
+
+- Mobile (400px): Layout displays correctly.
+- Responsive cards: Stack vertically.
+- Navigation: Mobile menu is displayed.
+- Buttons: Fit within the mobile viewport.
+
+Screenshots were captured during testing.

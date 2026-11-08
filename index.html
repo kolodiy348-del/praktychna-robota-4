@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфоліо початківця у веброзробці: навички, проєкти та контакти.">
+  <title>Олег Колодій — Вебпортфоліо</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="На початок сторінки">OK<span>.</span></a>
+      <div class="header-controls"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Увімкнути світлу тему" title="Змінити тему">☀ Світла тема</button><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Відкрити меню">☰ Меню</button></div>
+      <nav id="main-nav" aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#skills">Навички</a></li>
+          <li><a href="#projects">Проєкти</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ВІДКРИТИЙ ДО НОВИХ ІДЕЙ</p>
+        <h1 id="hero-title">Привіт! Я Олег.<br><span>Створюю цифрове майбутнє.</span></h1>
+        <p class="hero-description" id="hero-description">Навчаюся програмуванню та розвиваю навички веброзробки. Мені подобається перетворювати ідеї на зручні, сучасні й адаптивні сайти.</p>
+        <button class="button button-outline" type="button" id="change-text">Змінити привітання ✨</button>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Переглянути проєкти <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#contact">Зв’язатися зі мною</a>
+        </div>
+        <div class="hero-meta"><span>HTML5 & CSS3</span><span class="meta-separator">✦</span><span>Адаптивний дизайн</span></div>
+      </div>
+      <div class="hero-visual"><img src="images/developer.svg" alt="Ілюстрація робочого місця веброзробника з ноутбуком та елементами коду" width="560" height="460"></div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div><p class="section-kicker">01 / ЗНАЙОМСТВО</p><h2 id="about-title">Трохи <span>про мене</span></h2></div>
+        <div class="about-content"><p>Я студент спеціальності «Інженерія програмного забезпечення». Вивчаю основи розробки, експериментую з технологіями та щодня прагну дізнаватися щось нове.</p><p>Моя мета — створювати якісні цифрові продукти, які приносять користь людям.</p><a class="text-link" href="#skills">Дізнатися про мої навички <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container"><p class="section-kicker">02 / МОЇ МОЖЛИВОСТІ</p><h2 id="skills-title">Що я <span>вивчаю</span></h2><p class="section-intro">Технології та принципи, з якими працюю під час навчання.</p>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">&lt;/&gt;</div><h3>HTML5</h3><p>Семантична структура сторінок, доступність та правильна організація контенту.</p><span class="skill-tag">Структура</span></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">#</div><h3>CSS3</h3><p>Оформлення інтерфейсів, анімації, Flexbox, CSS Grid та адаптивна верстка.</p><span class="skill-tag">Дизайн</span></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">{ }</div><h3>Програмування</h3><p>Основи алгоритмів, логічного мислення та написання зрозумілого коду.</p><span class="skill-tag">Розвиток</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container"><p class="section-kicker">03 / ПРАКТИКА</p><h2 id="projects-title">Мої <span>проєкти</span></h2><p class="section-intro">Невеликі навчальні роботи, з яких починається великий шлях.</p>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-art art-one"><span class="mock-window"><span class="mock-dots">● ● ●</span><span class="mock-title">Мій перший сайт</span><span class="mock-lines"></span></span></div><div class="project-info"><span class="project-type">HTML / CSS</span><h3>Персональна вебсторінка</h3><p>Сторінка з інформацією про себе та адаптивним оформленням.</p><a class="text-link" href="#contact">Обговорити проєкт →</a></div></article>
+          <article class="project-card"><div class="project-art art-two"><span class="mock-window mock-window-shop"><span class="mock-dots">● ● ●</span><span class="shop-shapes"><i></i><i></i><i></i></span><span class="mock-lines"></span></span></div><div class="project-info"><span class="project-type">CSS GRID / FLEXBOX</span><h3>Макет каталогу</h3><p>Тренувальний дизайн карток товарів із гнучкою сіткою.</p><a class="text-link" href="#contact">Обговорити проєкт →</a></div></article>
+        </div>
+        <div class="project-manager"><h3>Інтерактивні ідеї проєктів</h3><p>Додавайте та видаляйте картки без перезавантаження сторінки.</p><div class="manager-actions"><input id="project-name" type="text" maxlength="55" placeholder="Назва нового проєкту" aria-label="Назва нового проєкту"><button class="button button-primary" id="add-project" type="button">Додати проєкт +</button></div><p id="project-hint" class="form-feedback" role="status" aria-live="polite"></p><div id="dynamic-projects" class="dynamic-projects"></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid"><div><p class="section-kicker">04 / НА ЗВ’ЯЗКУ</p><h2 id="contact-title">Маєте <span>ідею?</span></h2><p class="contact-description">Напишіть мені повідомлення. Буду радий новим знайомствам, цікавим ідеям та можливостям для розвитку.</p><p class="contact-note">Повідомлення зберігаються в базі даних SQLite через Python-сервер.</p></div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row"><div class="form-field"><label for="name">Ваше ім’я</label><input id="name" name="name" type="text" placeholder="Як до вас звертатися?" autocomplete="name" required></div><div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required></div></div>
+          <div class="form-field"><label for="message">Повідомлення</label><textarea id="message" name="message" rows="5" placeholder="Розкажіть про вашу ідею..." required></textarea></div>
+          <button class="button button-primary" type="submit">Надіслати повідомлення <span aria-hidden="true">↗</span></button>
+          <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+        </form><p class="contact-note"><a href="/messages">Переглянути повідомлення (вхід адміністратора) →</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="#top">OK<span>.</span></a><p>© 2026 Олег Колодій. Навчальний вебпроєкт.</p><a href="#top" class="back-top">Нагору ↑</a></div></footer>
+</body>
+</html>
